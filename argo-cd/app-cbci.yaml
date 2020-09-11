@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cloudbees-ci
+  namespace: argo
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/mluyo3414/cbci-argo.git
+    targetRevision: HEAD
+    path: cbci-helm
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: cloudbees-ci-argo
