@@ -1,4 +1,0 @@
-# Operations Center options
-OperationsCenter:
-  Platform: gke
-  HostName: msuarez.argo.io
