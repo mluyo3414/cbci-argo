@@ -7,10 +7,10 @@ spec:
   destination:
     name: ''
     namespace: cb-ci-argo
-    server: 'https://kubernetes.default.svc'
+    server: {{ .Values.spec.destination.server }}
   source:
     path: ''
-    repoURL: 'https://charts.cloudbees.com/public/cloudbees'
+    repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: 3.18.0+9e7e10b4b576
     chart: cloudbees-core
     helm:
