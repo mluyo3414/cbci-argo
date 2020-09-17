@@ -20,7 +20,7 @@ spec:
         - name: OperationsCenter.Platform
           value: gke
         - name: OperationsCenter.HostName
-          value: msuarez.argo.io
+          value: msuarez.dev.io
   project: default
   syncPolicy:
     automated:
